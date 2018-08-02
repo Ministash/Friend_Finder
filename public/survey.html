@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+        
+
+body{
+    font-family: 'Ubuntu';
+    background: url("background1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.x {
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none; 
+  }
+
+#navbarThing{
+    background: rgb(151, 54, 54);
+}
+
+.mainWrapper{
+    margin: 0 auto;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    margin-bottom: 100px;
+}
+
+#name-input{
+    margin-top: 100px;
+}
+
+.questionWrapper{
+    margin: 0 auto;
+    width: 85%;
+    border: solid rgba(0, 0, 0, 0.637) 5px;
+}
+
+.questionDiv{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#submitButton{
+    width: 500px;
+    height: 100px;
+    background: rgb(151, 54, 54);
+    border: solid #818586 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 20px;
+    transition: all 0.2s;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+#submitButton:hover{
+    background: #f3abab;
+    border: solid 2px rgb(255, 255, 255);
+    color: #00323f;
+}
+
+
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper" id="navbarThing">
+          <a href="/" class="brand-logo center">Home</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mainWrapper">
+
+            <div class="row" id="name-input">
+                <div class="col s3"></div>
+                    <div class="input-field col s6">
+                      <input value="Enter Your Name Here" id="first_name" type="text" class="validate">
+                      <label class="active" for="first_name2" style="color: red;">Your Name</label>
+                    </div>
+                    <div class="col s3"></div>
+                  </div>
+
+                  <div class="row" id="input">
+                        <div class="col s3"></div>
+                            <div class="input-field col s6">
+                              <input value="Your Image Link Here" id="first_name" type="text" class="validate">
+                              <label class="active" for="first_name2" style="color: red;">Your Image</label>
+                            </div>
+                            <div class="col s3"></div>
+                          </div>
+
+                          <div class="questionWrapper">
+                              <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                              <div class="row">
+                                  <div class="input-field col s8">
+                                          <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">I'm feeling a 1</option>
+                                            <option value="2">I'm feeling a 2</option>
+                                            <option value="3">I'm feeling a 3</option>
+                                            <option value="3">I'm feeling a 4</option>
+                                            <option value="3">I'm feeling a 5</option>
+                                          </select>
+                                          <label style="color: red;">Question1</label>
+                                        </div>
+  
+                            </div>
+
+                            <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                            <div class="row">
+                                <div class="input-field col s8">
+                                        <select>
+                                          <option value="" disabled selected>Choose your option</option>
+                                          <option value="1">I'm feeling a 1</option>
+                                          <option value="2">I'm feeling a 2</option>
+                                          <option value="3">I'm feeling a 3</option>
+                                          <option value="3">I'm feeling a 4</option>
+                                          <option value="3">I'm feeling a 5</option>
+                                        </select>
+                                        <label style="color: red;">Question1</label>
+                                      </div>
+
+                          </div>
+
+                          <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                          <div class="row">
+                              <div class="input-field col s8">
+                                      <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">I'm feeling a 1</option>
+                                        <option value="2">I'm feeling a 2</option>
+                                        <option value="3">I'm feeling a 3</option>
+                                        <option value="3">I'm feeling a 4</option>
+                                        <option value="3">I'm feeling a 5</option>
+                                      </select>
+                                      <label style="color: red;">Question1</label>
+                                    </div>
+
+                        </div>
+
+                        <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                        <div class="row">
+                            <div class="input-field col s8">
+                                    <select>
+                                      <option value="" disabled selected>Choose your option</option>
+                                      <option value="1">I'm feeling a 1</option>
+                                      <option value="2">I'm feeling a 2</option>
+                                      <option value="3">I'm feeling a 3</option>
+                                      <option value="3">I'm feeling a 4</option>
+                                      <option value="3">I'm feeling a 5</option>
+                                    </select>
+                                    <label style="color: red;">Question1</label>
+                                  </div>
+
+                      </div>
+
+                      <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                      <div class="row">
+                          <div class="input-field col s8">
+                                  <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">I'm feeling a 1</option>
+                                    <option value="2">I'm feeling a 2</option>
+                                    <option value="3">I'm feeling a 3</option>
+                                    <option value="3">I'm feeling a 4</option>
+                                    <option value="3">I'm feeling a 5</option>
+                                  </select>
+                                  <label style="color: red;">Question1</label>
+                                </div>
+
+                    </div>
+
+                    <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                    <div class="row">
+                        <div class="input-field col s8">
+                                <select>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">I'm feeling a 1</option>
+                                  <option value="2">I'm feeling a 2</option>
+                                  <option value="3">I'm feeling a 3</option>
+                                  <option value="3">I'm feeling a 4</option>
+                                  <option value="3">I'm feeling a 5</option>
+                                </select>
+                                <label style="color: red;">Question1</label>
+                              </div>
+
+                  </div>
+
+                  <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                  <div class="row">
+                      <div class="input-field col s8">
+                              <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">I'm feeling a 1</option>
+                                <option value="2">I'm feeling a 2</option>
+                                <option value="3">I'm feeling a 3</option>
+                                <option value="3">I'm feeling a 4</option>
+                                <option value="3">I'm feeling a 5</option>
+                              </select>
+                              <label style="color: red;">Question1</label>
+                            </div>
+
+                </div>
+
+                <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+                <div class="row">
+                    <div class="input-field col s8">
+                            <select>
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="1">I'm feeling a 1</option>
+                              <option value="2">I'm feeling a 2</option>
+                              <option value="3">I'm feeling a 3</option>
+                              <option value="3">I'm feeling a 4</option>
+                              <option value="3">I'm feeling a 5</option>
+                            </select>
+                            <label style="color: red;">Question1</label>
+                          </div>
+
+              </div>
+
+              <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+              <div class="row">
+                  <div class="input-field col s8">
+                          <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">I'm feeling a 1</option>
+                            <option value="2">I'm feeling a 2</option>
+                            <option value="3">I'm feeling a 3</option>
+                            <option value="3">I'm feeling a 4</option>
+                            <option value="3">I'm feeling a 5</option>
+                          </select>
+                          <label style="color: red;">Question1</label>
+                        </div>
+
+            </div>
+
+            <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                        <select>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">I'm feeling a 1</option>
+                          <option value="2">I'm feeling a 2</option>
+                          <option value="3">I'm feeling a 3</option>
+                          <option value="3">I'm feeling a 4</option>
+                          <option value="3">I'm feeling a 5</option>
+                        </select>
+                        <label style="color: red;">Question1</label>
+                      </div>
+
+          </div>
+                                  
+                              </div>
+
+                              <div class="x" id="submitButton">
+                                    <p class="questionDiv" style="font-size: 50px; margin-top: 35px;">Submit</p>
+                                  </div>
+
+      </div>
+
+
+    <script>
+    
+    $(document).ready(function(){
+    $('select').formSelect();
+    M.updateTextFields();
+  });
+    
+    
+    </script>
+</body>
+</html>

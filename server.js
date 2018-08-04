@@ -4,8 +4,6 @@ var app = express();
 var PORT = process.env.PORT || 9000; 
 var path = require('path');
 
-app.listen(process.env.PORT || 9000);
-
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }))
 

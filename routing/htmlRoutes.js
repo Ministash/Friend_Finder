@@ -5,7 +5,7 @@ module.exports = function (app){
         res.sendFile('survey.html', { root: path.join(__dirname, '../public') });
     });
 
-    app.get('/', function(req, res){
+    app.use('/', function(req, res){
         res.sendFile('home.html', { root: path.join(__dirname, '../public') });
     });
     

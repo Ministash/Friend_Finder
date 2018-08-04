@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-require("../Friend_Finder/routing/apiRoutes.js")(app);  
-require("../Friend_Finder/routing/htmlRoutes.js")(app);
+require(__dirname + '/routing/apiRoutes.js')(app);  
+require(__dirname + '/routing//htmlRoutes.js')(app);
 
 app.listen(PORT, function(){
   console.log("App listening on PORT: " + PORT);

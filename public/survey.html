@@ -214,10 +214,11 @@
     
     $(document).ready(function(){
     $('select').formSelect();
+    var currentURL = window.location.origin;
     
 
     $("#submitButton").on('click', function(){
-
+        
         let scoresArray = [];
         
         
@@ -240,14 +241,16 @@ console.log(scoresArray);
 
  $.post("/api/friends", newFriendData,
         function(data) {
-
             console.log("New Friend Added!");
 
         });
 
 
 
+
+
     })
+    
   });
     
     

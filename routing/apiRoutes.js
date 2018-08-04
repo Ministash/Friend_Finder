@@ -1,4 +1,5 @@
 var friendsData = require ("../app/friends.js");
+let isTrue = true;
 
 module.exports = function (app) {
     app.get('/api/friends', function (req, res){

@@ -8,7 +8,6 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res){
         friendsData.push(req.body);
 
-        var postResponse = JSON.stringify(req.body);
         //This is where we decide who the newest person is
 
 let newPerson = {
@@ -37,7 +36,6 @@ for (let i = 0; i < friendsData.length; i++) {
 
 
     //iterating over each person's score and comparing to the newest person's score
-
     for (let j = 0; j < compare.length; j++) {
         count = count + Math.abs(compare[j] - newScore[j]);
 
@@ -56,16 +54,15 @@ for (let i = 0; i < friendsData.length; i++) {
 }
 
 // console.log(resultsArr);
-
 //sorting my entire results array.
 let sortingFunction = resultsArr.sort((a, b) => {
-    return a.dif - b.dif;
+    return a.scores - b.scores;
 })
 
 console.log(sortingFunction);
 
 //Choosing who is the most compatible. If I chose the first index of the array, I would return the newest person, because they are the most compatible with themselves.
-let theChoosenOne = sortingFunction[0];
+let theChoosenOne = sortingFunction[1];
 
 // console.log(theChoosenOne);
 

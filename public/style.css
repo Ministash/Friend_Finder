@@ -83,5 +83,14 @@ body{
     color: #00323f;
 }
 
+#yourMatchBox{
+    position: sticky;
+    
+    width: 70%;
+    height: 70%;
+    background: white;
+    border: grey solid 3px;
+
+}
 
     

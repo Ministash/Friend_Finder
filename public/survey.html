@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,250 +11,247 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <nav>
         <div class="nav-wrapper" id="navbarThing">
-          <a href="/" class="brand-logo center">Home</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-          </ul>
+            <a href="/" class="brand-logo center">Home</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-      <div class="mainWrapper">
+    <div class="mainWrapper">
 
-            <div class="row" id="name-input">
-                <div class="col s3"></div>
-                    <div class="input-field col s6">
-                      <input placeholder="Enter Your Name Here" id="first_name" type="text" class="validate">
-                      <label class="active" for="first_name2" style="color: red;">Your Name</label>
-                    </div>
-                    <div class="col s3"></div>
-                  </div>
+        <div class="row" id="name-input">
+            <div class="col s3"></div>
+            <div class="input-field col s6">
+                <input placeholder="Enter Your Name Here" id="first_name" type="text" class="validate">
+                <label class="active" for="first_name2" style="color: red;">Your Name</label>
+            </div>
+            <div class="col s3"></div>
+        </div>
 
-                  <div class="row" id="input">
-                        <div class="col s3"></div>
-                            <div class="input-field col s6">
-                              <input placeholder="Enter Your Link Here" id="link" type="text" class="validate">
-                              <label class="active" for="first_name2" style="color: red;" class="validate" required="" aria-required="true">Your Image</label>
-                            </div>
-                            <div class="col s3"></div>
-                          </div>
+        <div class="row" id="input">
+            <div class="col s3"></div>
+            <div class="input-field col s6">
+                <input placeholder="Enter Your Link Here" id="link" type="text" class="validate">
+                <label class="active" for="first_name2" style="color: red;" class="validate" required="" aria-required="true">Your Image</label>
+            </div>
+            <div class="col s3"></div>
+        </div>
 
-                          <div class="questionWrapper">
-                              <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
-                              <div class="row">
-                                  <div class="input-field col s8">
-                                          <select id="question1">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1">I'm feeling a 1</option>
-                                            <option value="2">I'm feeling a 2</option>
-                                            <option value="3">I'm feeling a 3</option>
-                                            <option value="4">I'm feeling a 4</option>
-                                            <option value="5">I'm feeling a 5</option>
-                                          </select>
-                                          <label style="color: red;">Question1</label>
-                                        </div>
-  
-                            </div>
-
-                            <div class="questionDiv">Generally speaking, you rely more on your experience than your imagination.</div>
-                            <div class="row">
-                                <div class="input-field col s8">
-                                        <select id="question2">
-                                                <option value="" disabled selected>Choose your option</option>
-                                                <option value="1">I'm feeling a 1</option>
-                                                <option value="2">I'm feeling a 2</option>
-                                                <option value="3">I'm feeling a 3</option>
-                                                <option value="4">I'm feeling a 4</option>
-                                                <option value="5">I'm feeling a 5</option>
-                                        </select>
-                                        <label style="color: red;">Question2</label>
-                                      </div>
-
-                          </div>
-
-                          <div class="questionDiv">You find it easy to stay relaxed and focused even when there is some pressure.</div>
-                          <div class="row">
-                              <div class="input-field col s8">
-                                      <select id="question3">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1">I'm feeling a 1</option>
-                                            <option value="2">I'm feeling a 2</option>
-                                            <option value="3">I'm feeling a 3</option>
-                                            <option value="4">I'm feeling a 4</option>
-                                            <option value="5">I'm feeling a 5</option>
-                                      </select>
-                                      <label style="color: red;">Question3</label>
-                                    </div>
-
-                        </div>
-
-                        <div class="questionDiv">You rarely do something just out of sheer curiosity.</div>
-                        <div class="row">
-                            <div class="input-field col s8">
-                                    <select id="question4">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1">I'm feeling a 1</option>
-                                            <option value="2">I'm feeling a 2</option>
-                                            <option value="3">I'm feeling a 3</option>
-                                            <option value="4">I'm feeling a 4</option>
-                                            <option value="5">I'm feeling a 5</option>
-                                    </select>
-                                    <label style="color: red;">Question4</label>
-                                  </div>
-
-                      </div>
-
-                      <div class="questionDiv">People can rarely upset you.</div>
-                      <div class="row">
-                          <div class="input-field col s8">
-                                  <select id="question5">
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <option value="1">I'm feeling a 1</option>
-                                        <option value="2">I'm feeling a 2</option>
-                                        <option value="3">I'm feeling a 3</option>
-                                        <option value="4">I'm feeling a 4</option>
-                                        <option value="5">I'm feeling a 5</option>
-                                  </select>
-                                  <label style="color: red;">Question5</label>
-                                </div>
-
-                    </div>
-
-                    <div class="questionDiv">It is often difficult for you to relate to other people’s feelings.</div>
-                    <div class="row">
-                        <div class="input-field col s8">
-                                <select id="question6">
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <option value="1">I'm feeling a 1</option>
-                                        <option value="2">I'm feeling a 2</option>
-                                        <option value="3">I'm feeling a 3</option>
-                                        <option value="4">I'm feeling a 4</option>
-                                        <option value="5">I'm feeling a 5</option>
-                                </select>
-                                <label style="color: red;">Question6</label>
-                              </div>
-
-                  </div>
-
-                  <div class="questionDiv">In a discussion, truth should be more important than people’s sensitivities.</div>
-                  <div class="row">
-                      <div class="input-field col s8">
-                              <select id="question7">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">I'm feeling a 1</option>
-                                    <option value="2">I'm feeling a 2</option>
-                                    <option value="3">I'm feeling a 3</option>
-                                    <option value="4">I'm feeling a 4</option>
-                                    <option value="5">I'm feeling a 5</option>
-                              </select>
-                              <label style="color: red;">Question7</label>
-                            </div>
-
+        <div class="questionWrapper">
+            <div class="questionDiv">Your mind is always buzzing with unexplored ideas and plans.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question1">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question1</label>
                 </div>
 
-                <div class="questionDiv">You rarely get carried away by fantasies and ideas.</div>
-                <div class="row">
-                    <div class="input-field col s8">
-                            <select id="question8">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">I'm feeling a 1</option>
-                                    <option value="2">I'm feeling a 2</option>
-                                    <option value="3">I'm feeling a 3</option>
-                                    <option value="4">I'm feeling a 4</option>
-                                    <option value="5">I'm feeling a 5</option>
-                            </select>
-                            <label style="color: red;">Question8</label>
-                          </div>
+            </div>
 
-              </div>
+            <div class="questionDiv">Generally speaking, you rely more on your experience than your imagination.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question2">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question2</label>
+                </div>
 
-              <div class="questionDiv">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</div>
-              <div class="row">
-                  <div class="input-field col s8">
-                          <select id="question9">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">I'm feeling a 1</option>
-                                <option value="2">I'm feeling a 2</option>
-                                <option value="3">I'm feeling a 3</option>
-                                <option value="4">I'm feeling a 4</option>
-                                <option value="5">I'm feeling a 5</option>
-                          </select>
-                          <label style="color: red;">Question9</label>
-                        </div>
+            </div>
+
+            <div class="questionDiv">You find it easy to stay relaxed and focused even when there is some pressure.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question3">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question3</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">You rarely do something just out of sheer curiosity.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question4">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question4</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">People can rarely upset you.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question5">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question5</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">It is often difficult for you to relate to other people’s feelings.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question6">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question6</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">In a discussion, truth should be more important than people’s sensitivities.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question7">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question7</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">You rarely get carried away by fantasies and ideas.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question8">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question8</label>
+                </div>
+
+            </div>
+
+            <div class="questionDiv">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</div>
+            <div class="row">
+                <div class="input-field col s8">
+                    <select id="question9">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question9</label>
+                </div>
 
             </div>
 
             <div class="questionDiv">You feel more energetic after spending time with a group of people.</div>
             <div class="row">
                 <div class="input-field col s8">
-                        <select id="question10">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">I'm feeling a 1</option>
-                                <option value="2">I'm feeling a 2</option>
-                                <option value="3">I'm feeling a 3</option>
-                                <option value="4">I'm feeling a 4</option>
-                                <option value="5">I'm feeling a 5</option>
-                        </select>
-                        <label style="color: red;">Question10</label>
-                      </div>
+                    <select id="question10">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">I'm feeling a 1</option>
+                        <option value="2">I'm feeling a 2</option>
+                        <option value="3">I'm feeling a 3</option>
+                        <option value="4">I'm feeling a 4</option>
+                        <option value="5">I'm feeling a 5</option>
+                    </select>
+                    <label style="color: red;">Question10</label>
+                </div>
 
-          </div>
-                                  
-                              </div>
+            </div>
 
-                              <div class="x" id="submitButton">
-                                    <p class="questionDiv" style="font-size: 50px; margin-top: 35px;">Submit</p>
-                                  </div>
+        </div>
 
-      </div>
+        <div class="x" id="submitButton">
+            <p class="questionDiv" style="font-size: 50px; margin-top: 35px;">Submit</p>
+        </div>
+
+    </div>
+
+    <div id="yourMatchBox">Hunter</div>
 
 
     <script>
-    
-    $(document).ready(function(){
-    $('select').formSelect();
-    var currentURL = window.location.origin;
-    
 
-    $("#submitButton").on('click', function(){
-        
-        let scoresArray = [];
-        
-        
-        for(let i = 1; i < 11; i++){
-            scoresArray.push($("#question" + [i]).val());
-            
-        }
-        
-        let newFriendData = {
-            name: $("#first_name").val(),
-            photo: $("#link").val(),
-            scores: scoresArray
-
-        }
-
-console.log(newFriendData.name);
-console.log(newFriendData.photo);
-console.log(scoresArray);
+        $(document).ready(function () {
+            $('select').formSelect();
 
 
- $.post("/api/friends", newFriendData,
-        function(data) {
-            console.log("New Friend Added!");
+
+            $("#submitButton").on('click', function () {
+
+                let scoresArray = [];
+
+
+                for (let i = 1; i < 11; i++) {
+
+                    scoresArray.push($("#question" + [i]).val());
+                    
+
+                }
+
+                let newFriendData = {
+                    name: $("#first_name").val(),
+                    photo: $("#link").val(),
+                    scores: scoresArray
+                }
+
+                // console.log(newFriendData);
+
+
+                $.post("/api/friends", newFriendData).then(function (data) {
+                    console.log(data.name, data.photo, data.scores);
+
+                });
+            })
 
         });
 
 
-
-
-
-    })
-    
-  });
-    
-    
     </script>
 </body>
+
 </html>

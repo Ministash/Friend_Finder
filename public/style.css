@@ -94,5 +94,11 @@ body{
 .p{
     color: black;
     font-size: 20px;
+    margin: 0 auto;
+}
+
+#modal1{
+    min-width: 90%;
+    min-height: 90%;
 }
     

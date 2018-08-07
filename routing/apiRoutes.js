@@ -6,7 +6,7 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res){
-        friendsData.push(req.body);
+        
 
         //This is where we decide who the newest person is
 
@@ -62,12 +62,13 @@ let sortingFunction = resultsArr.sort((a, b) => {
 console.log(sortingFunction);
 
 //Choosing who is the most compatible. If I chose the first index of the array, I would return the newest person, because they are the most compatible with themselves.
-let theChoosenOne = sortingFunction[1];
+let theChoosenOne = sortingFunction[0];
 
 // console.log(theChoosenOne);
 
         
         res.send(theChoosenOne);
+        friendsData.push(req.body);
 
     });
 

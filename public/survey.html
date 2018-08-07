@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-
+    
     <nav>
         <div class="nav-wrapper" id="navbarThing">
             <a href="/" class="brand-logo center">Home</a>
@@ -205,23 +205,41 @@
 
         </div>
 
-        <div class="x" id="submitButton">
-            <p class="questionDiv" style="font-size: 50px; margin-top: 35px;">Submit</p>
+        <div id="alignmentDiv">
+            <div data-target="modal1" class="btn modal-trigger" id="submitButton">
+                <p  class="questionDiv" style="font-size: 50px; margin-top: 35px;">Submit</p>
+            </div>
+
+
         </div>
+        
 
     </div>
 
-    <div id="yourMatchBox">Hunter</div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+       <h1 class="p">This is your friend!</h1>
+      <img id="friendImg" class="p">
+      <p id="friendName" class="p"></p>
+     
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">X</a>
+    </div>
+  </div>
 
 
     <script>
 
         $(document).ready(function () {
+            $('.modal').modal();
             $('select').formSelect();
 
 
 
             $("#submitButton").on('click', function () {
+                
 
                 let scoresArray = [];
 
@@ -244,13 +262,17 @@
                 // console.log(newFriendData);
 
 
-                $.post("/api/friends", newFriendData).then(function (data) {
+                $.post({url: "/api/friends", traditional: true}, newFriendData).then(function (data) {
                     console.log(data.name, data.photo, data.scores);
 
-                });
-            })
+                    $("#friendImg").attr("src", data.photo);
+                    $("#friendName").html(data.name);
 
-        });
+
+                });
+
+            })
+});
 
 
     </script>

@@ -65,16 +65,15 @@ body{
 }
 
 #submitButton{
+    margin: 0 auto;
     width: 500px;
     height: 100px;
     background: rgb(151, 54, 54);
     border: solid #818586 2px;
-    margin: 0 auto;
-    margin-top: 20px;
     line-height: 20px;
     transition: all 0.2s;
     color: rgb(255, 255, 255);
-    margin-bottom: 50px;
+
 }
 
 #submitButton:hover{
@@ -83,14 +82,17 @@ body{
     color: #00323f;
 }
 
-#yourMatchBox{
-    position: sticky;
-    
-    width: 70%;
-    height: 70%;
-    background: white;
-    border: grey solid 3px;
+#alignmentDiv{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 500px;
+    height: 100px;
 
 }
 
+.p{
+    color: black;
+    font-size: 20px;
+}
     

@@ -13,7 +13,7 @@ module.exports = function (app) {
 let newPerson = {
     name: req.body.name,
     photo: req.body.photo,
-    scores: req.body["scores[]"]
+    scores: req.body.scores
 }
 
 //This is where I take the score of that individual and turn the array into integers
@@ -32,7 +32,7 @@ for (let i = 0; i < friendsData.length; i++) {
     let count = 0;
 
     //defining my compare variable
-    let compare = friendsData[i]["scores[]"];
+    let compare = friendsData[i].scores;
 
 
     //iterating over each person's score and comparing to the newest person's score
